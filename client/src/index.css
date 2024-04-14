@@ -1,0 +1,362 @@
+p,
+a,
+span,
+h3 {
+  padding: 0;
+  margin: 0;
+}
+
+* {
+  font-style: italic;
+}
+
+.Toastify__toast {
+  font-style: normal !important;
+}
+
+/* Nav-link */
+nav.isScrolled {
+  background-color: black;
+  color: white;
+}
+
+nav.isScrolled .navbar-brand,
+nav.isScrolled .nav-link {
+  color: white;
+}
+
+.nav-link {
+  color: rgba(0, 0, 0, 0.801);
+}
+
+.nav-link:focus,
+.nav-link:hover {
+  color: #dfb44f;
+}
+
+#shopNav > * {
+  padding: 10px;
+}
+
+#shopNav p {
+  padding-left: 15px;
+}
+
+/* grid-layout */
+
+.row .col {
+  padding: 0;
+  overflow: hidden;
+}
+
+.row {
+  gap: 10px;
+}
+
+/* img */
+
+.img-fluid {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.img-wrap {
+  cursor: pointer;
+  position: relative;
+}
+
+.img-wrap::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: white;
+  opacity: 0;
+  transition: all 0.4s;
+}
+
+.img-wrap:hover::before {
+  opacity: 0.3;
+}
+
+/* card */
+.card {
+  height: 100%;
+  border: none;
+  cursor: pointer;
+}
+
+/* dialog */
+dialog {
+  overflow: hidden;
+  border: none;
+}
+
+.icon-exit {
+  display: block;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 26px;
+  cursor: pointer;
+}
+
+.icon-logout {
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+/* FOOTER */
+#footer {
+  position: relative;
+  z-index: 1;
+}
+
+#footer p {
+  font-size: 20px;
+}
+
+#footer a {
+  color: white;
+  text-decoration: none;
+  opacity: 0.5;
+  transition: 0.4s all;
+  margin: 5px 0;
+}
+
+#footer a:hover {
+  opacity: 1;
+}
+
+/* Home Page */
+#homepage_banner {
+  height: 450px;
+  width: 100%;
+  background: url(/image/banner1.jpg) no-repeat center;
+  background-size: 100% 100%;
+}
+
+#homepage_banner .d-flex {
+  height: 450px;
+}
+
+#homepage_banner .d-flex > * {
+  margin: 5px 0;
+}
+
+/* SUBSCRIBE */
+.subscribe-form {
+  border: 1px solid black;
+  border-radius: 4px;
+  display: inline-block;
+  width: 400px;
+}
+
+.subscribe-form button {
+  border: none;
+  border-radius: 0;
+}
+
+.subscribe-form input {
+  border: none;
+}
+
+/* OTHER BANNER */
+#other-banner {
+  padding: 35px 0;
+}
+
+/* SHOP */
+#dummy-sort label {
+  width: min-content;
+}
+
+/* DETAIL */
+#detail-container {
+  height: 80vmin;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+.preview-img {
+  height: 25%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.preview-wrapper {
+  gap: 7px;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+#detail-container i,
+#detail-container img {
+  cursor: pointer;
+}
+
+input#quantity:focus {
+  outline-width: 0;
+  cursor: default;
+}
+
+/* AUTH FORM */
+#authForm {
+  position: relative;
+  left: 20%;
+  width: 400px;
+  text-align: center;
+}
+
+#authForm input {
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+  border: none;
+}
+
+#authForm input:not(:last-child) {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.514);
+}
+
+#authForm input[type="submit"] {
+  margin-top: 20px;
+}
+
+#authForm form {
+  margin-top: 15px;
+}
+
+#authForm .formContainer {
+  border: 1px solid rgba(0, 0, 0, 0.514);
+  padding: 0;
+}
+
+#authForm .d-flex > *,
+#authForm .formContainer {
+  margin: 0;
+}
+
+#authForm span {
+  color: blue;
+  cursor: pointer;
+  transition: 0.4s all;
+}
+
+#authForm span:hover {
+  text-decoration: underline;
+}
+
+/* cartTable */
+#cartTable {
+  max-width: 100%;
+  text-align: center;
+}
+
+.img-table {
+  height: 115px;
+  width: 115px;
+  object-fit: cover;
+}
+
+.price {
+  font-size: 17px;
+}
+
+#cartTable i,
+.cartNav > div {
+  cursor: pointer;
+  transition: 0.4s all;
+}
+
+#cartTable i:hover,
+.cartNav > div:hover {
+  color: #dfb44f;
+}
+
+p.blur {
+  filter: blur(0.6px);
+}
+
+#cartTable .td-wrap p {
+  width: 90px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* checkoutForm */
+
+#checkoutForm label,
+#checkoutForm input {
+  width: 100%;
+}
+
+#checkoutForm label {
+  margin-bottom: 7px;
+}
+
+#checkoutForm input {
+  margin: 10px 0;
+  padding: 5px 10px;
+  border: 1px solid rgba(0, 0, 0, 0.514);
+}
+
+#checkoutForm button {
+  border-radius: 0;
+  margin-top: 15px;
+}
+
+/* chatRoom */
+#chatToggle {
+  position: fixed;
+  right: 20px;
+  cursor: pointer;
+  font-size: 35px;
+  top: 90vh;
+  z-index: 2;
+}
+
+#chatToggle.isScrolled {
+  color: #dfb44f;
+  z-index: 2;
+}
+
+#chatRoom {
+  cursor: unset;
+  position: fixed;
+  right: 60px;
+  top: 37vh;
+  height: 375px;
+  width: 315px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.514);
+  z-index: 2;
+  border: none;
+}
+
+#chatRoom p {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+#chatRoom i {
+  cursor: pointer;
+
+  transition: 0.4s all;
+}
+
+#chatRoom i:hover {
+  color: #dfb44f;
+}
+
+#chatRoom .card-footer input {
+  flex-grow: 1;
+}
+
+#chatRoom .card-footer i {
+  margin-left: 10px;
+}
