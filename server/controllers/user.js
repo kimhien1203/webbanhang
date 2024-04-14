@@ -251,3 +251,11 @@ exports.delCartItem = async (req, res) => {
     return acc + cur.item.price * cur.quantity;
   }, 0);
 };
+
+exports.usersFunny = async (req, res, next) => {
+  try {
+    const users = await User.find({ role: "funny" });
+  }catch (error) {
+    console.error(error)
+  }
+}
